@@ -1,0 +1,17 @@
+class Solution{
+    public:
+    //Function to return the count of number of elements in union of two arrays.
+    int doUnion(int a[], int n, int b[], int m)  {
+        //code here
+        set<int> s;   //declaring set container to store the elements of both arrays
+        for(int i=0;i<n;i++)    //adding all the elements of array a in set s
+        {
+            s.insert(a[i]);
+        }
+        for(int j=0;j<m;j++)    //adding all the elemets of array b in set s
+        {
+            s.insert(b[j]);
+        }
+        return s.size();     //returning the size of set which represents union since there is only unique elements inside
+    }
+};
