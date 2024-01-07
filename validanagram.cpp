@@ -4,7 +4,7 @@ public:
         int i=0;
         if(s.length()!=t.length())  //checks if size of string are equal or not
         {
-            return false;   //return false if no
+            return false;   //return false if not true
         }
         while(i<s.length())  //works until i is less than size of main string
         {
